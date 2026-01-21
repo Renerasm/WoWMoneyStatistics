@@ -1,3 +1,4 @@
+Forked from https://github.com/kjs6x2/WoWMoneyStatistics
 
 Working so far in prepatch 12.0, testing some more
 
