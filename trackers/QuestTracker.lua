@@ -134,8 +134,8 @@ end
 mt.RegisterInformationEvent(NORMAL_QUEST, 'QUEST_LOOT_RECEIVED', HandleLoot, false)
 mt.RegisterTracker(NORMAL_QUEST, 'QUEST', 'QUEST_COMPLETE','QUEST_FINISHED', OnTrigger)
 
-mt.RegisterDeterminant(WORLD_BOSS_QUEST, 'COMBAT_LOG_EVENT_UNFILTERED', WorldBossClassifier)
-mt.RegisterTracker(WORLD_BOSS_QUEST, 'QUEST', 'PLAYER_REGEN_DISABLED', 'PLAYER_REGEN_ENABLED', OnTrigger)
+--mt.RegisterDeterminant(WORLD_BOSS_QUEST, 'COMBAT_LOG_EVENT_UNFILTERED', WorldBossClassifier)
+--mt.RegisterTracker(WORLD_BOSS_QUEST, 'QUEST', 'PLAYER_REGEN_DISABLED', 'PLAYER_REGEN_ENABLED', OnTrigger)
 
 mt.RegisterDeterminant(BONUS_OBJ_QUEST, 'QUEST_TURNED_IN', BonusObjectiveClassifier)
 mt.RegisterTracker(BONUS_OBJ_QUEST, 'QUEST', 'PLAYER_ENTERING_WORLD', nil, OnTrigger)

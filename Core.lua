@@ -144,7 +144,7 @@ local function VersionChanges() --TODO: Switch to a registeration setup?
    end
 
    -- Do this last to make sure we don't overwrite the previous version
-   local cVersion = GetAddOnMetadata(addon_name, "version")
+   local cVersion = C_AddOns.GetAddOnMetadata(addon_name, "version")
    _G.WOWMMGlobal.Version = cVersion
    _G.WOWMMGlobal[realm].Version = cVersion
    _G.WOWMMChar.Version = cVersion

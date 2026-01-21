@@ -65,8 +65,8 @@ local function Classify(uuid)
    end
 end
 
-mt.RegisterDeterminant(BANK_UUID, 'PLAYERBANKBAGSLOTS_CHANGED', Classify)
-mt.RegisterDeterminant(REAGENTBANK_UUID, 'REAGENTBANK_PURCHASED', Classify)
+mt.RegisterDeterminant(BANK_UUID, 'PLAYERBANKSLOTS_CHANGED', Classify)
+mt.RegisterDeterminant(REAGENTBANK_UUID, 'PLAYERBANKSLOTS_CHANGED', Classify)
 mt.RegisterTracker(BANK_UUID, 'STORAGEUPGRADE', 'BANKFRAME_OPENED', 'BANKFRAME_CLOSED', OnTrigger)
 mt.RegisterTracker(REAGENTBANK_UUID, 'STORAGEUPGRADE', 'BANKFRAME_OPENED', 'BANKFRAME_CLOSED', OnTrigger)
 mt.RegisterOnActivation(BANK_UUID, OnActivation)

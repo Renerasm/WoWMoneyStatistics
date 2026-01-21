@@ -549,7 +549,7 @@ local function CreateUI(self)
          OnLoad = StatDisplayTypeDropDown_OnLoad,
       })
 
-   if IsAddOnLoaded("ElvUI") then
+   if C_AddOns.IsAddOnLoaded("ElvUI") then
       cSkinDropDownBox(ModeMenu.menu)
    end
 
@@ -604,7 +604,7 @@ local function CreateUI(self)
    --local lineGraphTab = self:AddButton("Prototype_Dialog__FrameTab"..LINE_GRAPH_TAB, "Line Graph", 50, 30, "CharacterFrameTabButtonTemplate")
    --lineGraphTab:SetPoint("TOPLEFT", pieChartTab, "TOPRIGHT", -21, 0)
 
-   if IsAddOnLoaded("ElvUI") then
+   if C_AddOns.IsAddOnLoaded("ElvUI") then
       cSkinTab(SummaryTab)
       cSkinTab(pieChartTab)
       cSkinTab(lineGraphTab)

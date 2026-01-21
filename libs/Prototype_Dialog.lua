@@ -107,7 +107,7 @@ function Prototype_Dialog:new(o)
 
    o.isShown = false
 
-   if IsAddOnLoaded("ElvUI") then
+   if C_AddOns.IsAddOnLoaded("ElvUI") then
       o.frame:StripTextures()
       o.frame:SetTemplate("Default")
    end
@@ -119,7 +119,7 @@ function Prototype_Dialog:new(o)
       end
 
       o.header = CreateFrame("Frame", "Prototype_Dialog__Frame_Header", o.frame, "BackdropTemplate")
-      if IsAddOnLoaded("ElvUI") then
+      if C_AddOns.IsAddOnLoaded("ElvUI") then
          o.header:StripTextures()
          o.header:SetTemplate("Transparent")
       else
@@ -223,7 +223,7 @@ function Prototype_Dialog:AddEditBox(name, w, h, maxLetters)
    editBox:SetMultiLine(false)
    editBox:SetMaxLetters(maxLetters)
 
-   if IsAddOnLoaded("ElvUI") then
+   if C_AddOns.IsAddOnLoaded("ElvUI") then
       cSkinEditBox(editBox)
    end
    editBox:SetScript("OnHide", OnHideEditBox)
@@ -271,7 +271,7 @@ function Prototype_Dialog:AddCloseButton(name, text, w, h)
    button:RegisterForClicks("LeftButtonUp")
    button:Show()
 
-   if IsAddOnLoaded("ElvUI") then
+   if C_AddOns.IsAddOnLoaded("ElvUI") then
       cSkinCloseButton(button)
       button:SetSize(30, 30)
    end
@@ -289,7 +289,7 @@ function Prototype_Dialog:AddButton(name, text, w, h, inherits)
    button:RegisterForClicks("LeftButtonDown")
    button:Show()
 
-   if IsAddOnLoaded("ElvUI") and inherits == "UIPanelButtonTemplate" then
+   if C_AddOns.IsAddOnLoaded("ElvUI") and inherits == "UIPanelButtonTemplate" then
       cSkinButton(button)
    end
 

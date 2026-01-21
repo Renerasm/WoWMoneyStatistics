@@ -68,8 +68,8 @@ local function EventHandler(self, event, ...)
       self:SetScript("OnUpdate", 
          function(self, elapsed)
             if core.VersionChangesApplied then
-               if (IsAddOnLoaded("SexyMap") and profile.GetSexyCompatSetting())
-                  or IsAddOnLoaded("MBB") then
+               if (C_AddOns.IsAddOnLoaded("SexyMap") and profile.GetSexyCompatSetting())
+                  or C_AddOns.IsAddOnLoaded("MBB") then
                   mmb = LibStub("LibDBIcon-1.0")
                   mmb:Register(addon_name, ldb.GetLDB(), _G.WOWMSProfile[realm][player].Minimap)
                else

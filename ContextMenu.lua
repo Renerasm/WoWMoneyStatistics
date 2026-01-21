@@ -24,9 +24,9 @@ local function ContextMenu_OnLoad(self, level, menuList)
       if level == 1 then
          -- If SexyMap is loaded this addon will allow SexyMap to control minimap icon movements and visibility
          -- Don't allow any context cm options to be visible that will not function
-         local sexyMapLoaded = IsAddOnLoaded("SexyMap")
-         local mbbLoaded = IsAddOnLoaded("MBB")
-         local elvUILoaded = IsAddOnLoaded("ElvUI")
+         local sexyMapLoaded = C_AddOns.IsAddOnLoaded("SexyMap")
+         local mbbLoaded = C_AddOns.IsAddOnLoaded("MBB")
+         local elvUILoaded = C_AddOns.IsAddOnLoaded("ElvUI")
 
          cm:AddDescriptor    (  "WoW Money Statistics", 1, true )
             cm:AddDescriptor    (  "-------------------", level )

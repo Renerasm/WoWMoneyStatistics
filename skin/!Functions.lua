@@ -4,14 +4,14 @@ Use these functions to call skinning functions from ElvUI or Tukui
 Version 1.1
  ]]
  
-if IsAddOnLoaded("ElvUI") then
+if C_AddOns.IsAddOnLoaded("ElvUI") then
 	local E, L, DF = unpack(ElvUI)
 	local S = E:GetModule('Skins')
 	s = S
 	c = E
 	--DEFAULT_CHAT_FRAME:AddMessage("ElvUI is loaded")
 else
-	if IsAddOnLoaded("Tukui") then
+	if C_AddOns.IsAddOnLoaded("Tukui") then
 		local T, C, L = unpack(Tukui)
 		s = T
 		c = C

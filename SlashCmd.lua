@@ -80,7 +80,7 @@ RegisterSlashCommand("minimap",
                      end, 
                      "Toggle Minimap Icon",
                      function(...)
-                        return (not IsAddOnLoaded("SexyMap") or not profile.GetSexyCompatSetting()) and not IsAddOnLoaded("MBB")
+                        return (not C_AddOns.IsAddOnLoaded("SexyMap") or not profile.GetSexyCompatSetting()) and not C_AddOns.IsAddOnLoaded("MBB")
                      end)
 
 RegisterSlashCommand("sexymap",
@@ -91,7 +91,7 @@ RegisterSlashCommand("sexymap",
                      end, 
                      "Toggle SexyMap Integration",
                      function(...)
-                        return IsAddOnLoaded("SexyMap")
+                        return C_AddOns.IsAddOnLoaded("SexyMap")
                      end)
 
 RegisterSlashCommand("show",
@@ -175,7 +175,7 @@ RegisterSlashCommand("trackers",
 
 RegisterSlashCommand("addonTables",
                      function(...)
-                        if IsAddOnLoaded("TableExplorer") then
+                        if C_AddOns.IsAddOnLoaded("TableExplorer") then
                            texplore(addon_name, addon, 10)
                         end
                      end,

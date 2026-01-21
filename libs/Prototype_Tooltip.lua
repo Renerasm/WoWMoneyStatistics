@@ -9,7 +9,7 @@ local util = addon.utility
 local profile = addon.profile
 
 local function GetStringWidth(self, string)
-   if IsAddOnLoaded("ElvUI") and profile.GetElvUIFontSetting() then
+   if C_AddOns.IsAddOnLoaded("ElvUI") and profile.GetElvUIFontSetting() then
       cTooltipFont(self.fontString)
    else
       self.fontString:SetFont(fonts[self.Font], self.FontHeight, nil)
