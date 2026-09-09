@@ -840,6 +840,26 @@ local function Registrations()
                               false
                            )
    
+   RegisterOptionalSetting (  "WarbandBank",
+                              "Warband Bank",
+                              true,
+                              function()
+                                 AddCashItem("Warband Bank:", _G.WOWMMGlobal.WarbandBankMoney or 0, true)
+                                 tooltip:AddLine(' ')
+                              end,
+                              function(menu, level, menuList)
+                                 if level ~= 2 then return end
+                                 local key = "WarbandBank"
+                                 StandardOnOffOptionalMenu(key, menu, level)
+                              end,
+                              function()
+                                 return "Warband Bank:", util.FormatMoney(_G.WOWMMGlobal.WarbandBankMoney or 0)
+                              end,
+                              false,
+                              false,
+                              false
+                           )
+
    RegisterOptionalSetting (  "Servers",
                               "Servers",
                               true,

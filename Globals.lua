@@ -7,6 +7,7 @@ local function InitGlobals()
    _G.WOWMSZoneLoot = _G.WOWMSZoneLoot or {}
    
    _G.WOWMMGlobal = _G.WOWMMGlobal or {}
+   _G.WOWMMGlobal.WarbandBankMoney = _G.WOWMMGlobal.WarbandBankMoney or 0
    _G.WOWMSTracker = _G.WOWMSTracker or {}
    _G.WOWMSZone = _G.WOWMSZone or {}
    _G.WOWMSProfile = _G.WOWMSProfile or {}

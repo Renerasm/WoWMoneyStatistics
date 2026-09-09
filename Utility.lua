@@ -482,6 +482,7 @@ function util.GetTotalCash()
          total = total + realmTotal
       end
    end
+   total = total + (_G.WOWMMGlobal.WarbandBankMoney or 0)
    return total
 end
 
