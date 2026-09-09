@@ -3,6 +3,7 @@
    <Script file="BagTracker.lua"/>
    <Script file="BankTracker.lua"/>
    <Script file="GuildBankTracker.lua"/>
+   <Script file="WarbandBankTracker.lua"/>
    <Script file="LFGTracker.lua"/>
    <Script file="MerchantTracker.lua"/>
    <Script file="MailTracker.lua"/>
