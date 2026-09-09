@@ -43,6 +43,7 @@ mt.DisplayNames =
    TRANSMOG             = "Transmog",
    VOID                 = "Void Storage",
    GUILDBANK            = "Guild",
+   WARBANDBANK          = "Warband Bank",
    LOOT                 = "Loot",
    REPAIR               = "Repair",
    MERCH                = "Vendor",
